@@ -1,0 +1,19 @@
+# source
+src
+
+# build config
+tsconfig.json
+rollup.config.js
+
+# package lock file
+package-lock.json
+yarn.lock
+
+# misc
+.commitlintrc.json
+.eslintignore
+.eslintrc
+.pnp.cjs
+.prettierrc
+.yarn
+.yarnrc.yml
