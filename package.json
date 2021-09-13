@@ -1,11 +1,14 @@
 {
   "name": "class-serialisation-helper",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Decorators that helps you serialise your response and request",
   "main": "lib/mod.js",
   "module": "lib/mod.esm.js",
   "types": "lib/types.d.ts",
-  "repository": "git@github.com:samsan1212/class-serialisation-helper.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samsan1212/class-serialisation-helper.git"
+  },
   "author": "Sam TS Chan",
   "license": "MIT",
   "packageManager": "yarn@3.0.2",
