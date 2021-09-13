@@ -10,10 +10,12 @@ package-lock.json
 yarn.lock
 
 # misc
-.commitlintrc.json
+.commitlintrc.js
 .eslintignore
 .eslintrc
+.husky
 .pnp.cjs
 .prettierrc
+.vscode
 .yarn
 .yarnrc.yml
