@@ -1,6 +1,6 @@
 {
   "name": "class-serialisation-helper",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Decorators that helps you serialise your response and request",
   "main": "lib/mod.js",
   "module": "lib/mod.esm.js",
