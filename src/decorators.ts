@@ -2,7 +2,7 @@ import { SERIALISER_KEY_PARAMETER } from "./types";
 
 import type { SerialiseFunction, SerialiseParametersMeta } from "./types";
 
-export function Param<T>(cb: SerialiseFunction<T>): ParameterDecorator {
+export function SerialiseParam<T>(cb: SerialiseFunction<T>): ParameterDecorator {
   return function (target, propertyName, parameterIndex) {
     const existingSerialiseParameters: SerialiseParametersMeta<T> =
       Reflect.getOwnMetadata(SERIALISER_KEY_PARAMETER, target, propertyName) || new Map();
@@ -49,7 +49,7 @@ export function Serialise<T = unknown>(returnSerialiseFunction?: SerialiseFuncti
 
     // assign wrapped function
     descriptor.value = function (...args: any[]) {
-      const parsedArgs = serialiseParameters(args);
+      const parsedArgs = serialiseParameters(...args);
       const result = _func.apply(this, parsedArgs);
       return serialiseResponse(result);
     };

@@ -9,6 +9,10 @@ rollup.config.js
 package-lock.json
 yarn.lock
 
+# test config
+jest.config.js
+jest.setup.js
+
 # misc
 .commitlintrc.js
 .eslintignore
