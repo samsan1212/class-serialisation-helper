@@ -11,7 +11,7 @@ yarn.lock
 
 # test config
 jest.config.js
-jest.setup.js
+jest.setup.ts
 
 # misc
 .commitlintrc.js
