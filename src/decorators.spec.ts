@@ -56,10 +56,10 @@ describe("SerialiseParam", () => {
 
     const ReqSerialiser = (v: any) => {
       // you can add validation when converting the parameters
-      if (!isDate(v?.createdAt)) {
+      if (!isDate(v)) {
         throw new Error("invalid data");
       }
-      return { createdAt: new Date(v.createdAt) };
+      return { createdAt: new Date(v) };
     };
 
     const TextSerialiser = (v: any) => `${v}`;
@@ -78,7 +78,7 @@ describe("SerialiseParam", () => {
 
     const timestamp = Date.now();
 
-    expect(app.hello({ createdAt: timestamp } as never, 123 as never)).toEqual({
+    expect(app.hello(timestamp as never, 123 as never)).toEqual({
       createdAt: new Date(timestamp),
       text: "123",
     });
