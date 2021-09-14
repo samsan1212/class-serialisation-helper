@@ -14,8 +14,8 @@ npm i class-serialisation-helper
 
 ## Documentation
 
-- [Serialise](###Serialise)
-- [SerialiseParam](###SerialiseParam)
+- [Serialise](#Serialise)
+- [SerialiseParam](#SerialiseParam)
 
 To _enable serialisation_, put the `Serialise` decorator on the class method, e.g.
 
